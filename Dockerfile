@@ -1,4 +1,5 @@
-FROM ruby:2.6.3
+ARG RUBY_VERSION="latest"
+FROM ruby:${RUBY_VERSION}
 LABEL maintainer="Adam Sumner <adamsumner@gmail.com>"
 
 # Setup yarn and all ruby + rails dependencies
